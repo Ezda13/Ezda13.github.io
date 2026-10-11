@@ -311,6 +311,24 @@
                 transform: none;
             }
         }
+        .lien-cv {
+            display: inline-block;
+            margin-top: 2.5rem;
+            padding: 0.6rem 1.8rem;
+            border: 1px solid var(--or);
+            border-radius: 999px;
+            color: var(--or);
+            font-family: var(--police);
+            font-size: 1rem;
+            text-decoration: none;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .lien-cv:hover,
+        .lien-cv:focus-visible {
+            background-color: var(--or);
+            color: var(--nuit);
+        }
+
         @media (prefers-reduced-motion: reduce) {
             * { transition: none !important; }
         }
@@ -384,6 +402,8 @@
                         <p>L'objectif&nbsp;: relier ces deux mondes et voir jusqu'où cette rencontre peut aller.</p>
                     </li>
                 </ul>
+
+                <a class="lien-cv" href="cv.pdf" target="_blank">Voir mon CV</a>
 
                 <p class="note">Cette page s'enrichira bientôt&nbsp;: compétences, contact, liens.</p>
             </div>
